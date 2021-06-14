@@ -1,4 +1,14 @@
 .hero {
+  background-color: $veryLightGray;
+  
+  .container {
+    @include breakpoint-up(large){
+      display: flex;
+      align-items: center;
+  
+    
+  }
+  }
 
   &__image {
     position: relative;
@@ -8,7 +18,19 @@
     background-position: center center;
     min-height: 17.5rem;
 
-    &::before {
+    @include breakpoint-up(large){
+      flex: 3;
+      order: 2;
+      height: 41rem;
+      background-image: none;
+      // background-image: url('/New-Learning-Frontend/Updated\ Easy\ Bank\ Template/images/bg-intro-desktop.svg');
+      // background-position: left center;
+      
+
+    }
+    
+
+    &::after {
       content: "";
       position: absolute;
       height: 100%;
@@ -17,12 +39,44 @@
       background-size: 93%;
       background-repeat: no-repeat;
       background-position: center bottom;
+
+      @include breakpoint-up(large){
+        width: 120%;
+        height: 122%;
+        background-size: 94%;
+        background-position: center 150%;
+        left: 22%;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-image: url('/New-Learning-Frontend/Updated\ Easy\ Bank\ Template/images/bg-intro-desktop.svg');
+      background-size: 93%;
+      background-repeat: no-repeat;
+      background-position: center bottom;
+
+      @include breakpoint-up(large){
+        width: 150%;
+        background-size: 122%;
+        background-position: 0% 83%;
+      }
     }
   }
 
   &__text {
     text-align: center;
 
+    @include breakpoint-up(large){
+      flex: 2;
+      order: 1;
+      text-align: left;
+
+
+    }
 
     h1 {
       font-weight: 300;
@@ -30,10 +84,14 @@
       line-height: 1.15;
       font-size: 2.3125rem;
       margin-bottom: 1.5rem;
+      @include breakpoint-up(large){
+        font-size: $font-xlg;
+      }
     }
     p {
       line-height: 1.5;
       margin-bottom: 2.25rem;
+
     }
   }
 }
