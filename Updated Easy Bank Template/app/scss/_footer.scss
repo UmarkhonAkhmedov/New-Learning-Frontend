@@ -4,16 +4,37 @@
   padding: 2.5rem;
   text-align: center;
 
+  @include breakpoint-up(large){
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 2fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: 
+    "logo links1 links2 cta"
+    "social links1 links2 copyright";
+    justify-items: start;
+  }
+
   a {
     color: $white;
   }
   &__logo {
     display: inline-block;
-    margin-bottom: 1.875rem;
+    @include breakpoint-down(medium){
+      margin-bottom: 1.875rem;;
+    }
+    @include breakpoint-up(large){
+      grid-area: logo;
+    }
   }
 
   &__social {
-    margin-bottom: 1.875rem;
+    @include breakpoint-down(medium){
+      margin-bottom: 1.875rem;;
+    }
+    @include breakpoint-up(large){
+      grid-area: social;
+      align-self: end;
+    }
     a {
       display: inline-block;
       
@@ -27,22 +48,55 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-
+    font-size: 0.9375rem;
+    
+    @include breakpoint-up(large){
+      align-items: start;
+      justify-content: space-between;
+    }
     &.col1 {
-
+      @include breakpoint-up(large){
+        grid-area: links1;
+      }
     }
     &.col2 {
       margin-bottom: 1.875rem;
+      @include breakpoint-up(large){
+        grid-area: links2;
+      }
     }
     a {
       flex: 0 0 auto;
       line-height: 2.25;
+      @include breakpoint-down(medium) {
+
+      }
     }
   }
 
   &__cta {
+    @include breakpoint-up(large){
+      grid-area: cta;
+      text-align: right;
+      justify-self: right;
+    }
+    @include breakpoint-down(medium) {
+
+    }
     a.button {
-      margin-bottom: 1.875rem;
+      @include breakpoint-down(medium) {
+        margin-bottom: 1.875rem;
+      }
+      
+    }
+  }
+
+  &__copyright {
+    font-size: 0.9375rem;
+    @include breakpoint-up(large){
+      grid-area: copyright;
+      align-self: end;
+      justify-self: end;
     }
   }
 }
