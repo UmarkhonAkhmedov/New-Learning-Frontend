@@ -18,6 +18,7 @@ body {
   color: #9698a6;
   font-weight: 300;
   min-height: 300vh;
+  overflow-x: hidden;
 }
 
 @media (min-width: 64em) {
@@ -620,5 +621,61 @@ button:hover, .button:hover {
 
 .article__description {
   font-size: 0.8125rem;
+}
+
+.footer {
+  background-color: #2d314d;
+  color: white;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.footer a {
+  color: white;
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 1.875rem;
+}
+
+.footer__social {
+  margin-bottom: 1.875rem;
+}
+
+.footer__social a {
+  display: inline-block;
+}
+
+.footer__social a:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.footer__links {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__links.col2 {
+  margin-bottom: 1.875rem;
+}
+
+.footer__links a {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  line-height: 2.25;
+}
+
+.footer__cta a.button {
+  margin-bottom: 1.875rem;
 }
 /*# sourceMappingURL=style.css.map */
