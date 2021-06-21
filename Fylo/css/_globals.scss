@@ -1,0 +1,22 @@
+html {
+  font-size: 100%;
+}
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+body {
+  font-size: calc(16px + 0.3vw);
+  line-height: 1.3;
+}
+
+// Fonts
+$font-title: 'Raleway', sans-serif;
+$font-body: 'Open Sans', sans-serif;
+
+// Colors
+$introBg: #1b2330;
+$mainBg: #171e2a;
+$footerBg: #0a1423;
+$testimonialBg: #20293b;
+$ctaCyan: #64e1d9;
+$ctaBlue: #329ecc;

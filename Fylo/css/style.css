@@ -1,0 +1,12 @@
+html {
+  font-size: 100%;
+}
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: calc(16px + 0.3vw);
+  line-height: 1.3;
+}/*# sourceMappingURL=style.css.map */
