@@ -2,11 +2,14 @@
   display: flex;
   justify-content: space-between;
   background-color: $introBg;
-
+  padding: 73px 80px;
   .header__list {
-    
     :not(:last-child) {
       margin-right: 56px;
     }
+  }
+
+  img {
+    width: 185px;
   }
 }

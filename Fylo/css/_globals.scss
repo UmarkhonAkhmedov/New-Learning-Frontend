@@ -1,19 +1,9 @@
-// Fonts
-$font-title: 'Raleway', sans-serif;
-$font-body: 'Open Sans', sans-serif;
-
-// Colors
-$introBg: #1b2330;
-$mainBg: #171e2a;
-$footerBg: #0a1423;
-$testimonialBg: #20293b;
-$ctaCyan: #64e1d9;
-$ctaBlue: #329ecc;
-
 html {
   font-size: 100%;
 }
-*, *:after, *:before {
+*,
+*:after,
+*:before {
   box-sizing: border-box;
 }
 body {
@@ -23,10 +13,10 @@ body {
   margin: 0;
   padding: 0;
 }
-*, a {
+*,
+a {
   color: #ffffff;
 }
 a {
   text-decoration: none;
 }
-

@@ -26,6 +26,7 @@ a {
   display: flex;
   justify-content: space-between;
   background-color: #1b2330;
+  padding: 73px 80px;
 }
 .header .header__list :not(:last-child) {
   margin-right: 56px;
