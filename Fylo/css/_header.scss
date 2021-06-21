@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: $introBg;
+
+  .header__list {
+    
+    :not(:last-child) {
+      margin-right: 56px;
+    }
+  }
+}
