@@ -531,6 +531,23 @@ input {
   color: var(--text-color);
 }
 
+/* Sponsors */
+.sponsor__container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  row-gap: 2.5rem;
+  column-gap: 3.5rem;
+}
+.sponsor__img {
+  width: 90px;
+  filter: invert(.7);
+  transition: var(--img-transition);
+}
+.sponsor__content:hover .sponsor__img {
+  filter: invert(.5);
+}
 
 
 
