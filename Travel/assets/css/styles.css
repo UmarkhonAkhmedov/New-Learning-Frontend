@@ -9,7 +9,7 @@
   /* Colors */
   --hue-color: 190;
   --first-color: hsl(var(--hue-color), 64%, 22%);
-  --first-second-second: hsl(var(--hue-color), 64%, 22%);
+  --first-color-second: hsl(var(--hue-color), 64%, 22%);
   --first-color-alt: hsl(var(var(--hue-color), 64%, 15%));
   --title-color: hsl(var(--hue-color), 64%, 18%);
   --text-color: hsl(var(var(--hue-color), 24%, 35%));
@@ -503,6 +503,32 @@ input {
 }
 .place__card:hover .place__img {
   transform: var(--img-scale);
+}
+
+/* Subscribe */
+.subscribe__bg {
+  background-color: var(--first-color-second);
+  padding: 2.5rem 0;
+}
+.subscribe__title,
+.subscribe__description {
+  color: var(--white-color);
+  margin-bottom: var(--mb-2-5);
+}
+.subscribe__form {
+  background-color: var(--input-color);
+  padding: .5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.subscribe__input {
+  width: 70%;
+  padding-right: .5rem;
+  background-color: var(--input-color);
+  color: var(--text-color);
+}
+.subscribe__input::placeholder {
+  color: var(--text-color);
 }
 
 
