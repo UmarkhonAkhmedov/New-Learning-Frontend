@@ -95,7 +95,15 @@ h1, h2, h3 {
   line-height: 1.4;
   margin-bottom: 1rem;
 }
+.accordion__question.open {
+  
+}
+.accordion__collapse.collapse {
+  display: none;
+}
+.accordion__collapse.collapsing {
 
+}
 
 
 
