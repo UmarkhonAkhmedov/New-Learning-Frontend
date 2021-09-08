@@ -18,7 +18,37 @@ html {
 body {
   min-height: 100vh;
   margin: 0;
-  padding: 0;
+  padding: 3rem;
   font-family: 'Kumbh Sans', sans-serif;
   background-image: linear-gradient(var(--gradient-violet), var(--gradient-blue));
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 2rem;
+  max-width: 56rem;
+  margin: 3rem;
+}
+.card__image img {
+  width: 100%;
+  height: auto;
+  max-width: 25rem;
+}
+
+.card__text {
+
+}
+@media (min-width: 56em){
+  .card {
+    display: flex;
+    margin: 6rem auto;
+    padding-right: 2rem;
+    background-image: url('images/bg-pattern-desktop.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: ;
+  }
+  .card__image, .card__text {
+    flex: 1;
+  }
 }
