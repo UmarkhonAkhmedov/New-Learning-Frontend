@@ -1,0 +1,60 @@
+:root {
+    /* Height */
+    --header-height: ;
+
+    /* Colors */
+    --hue-color: ;
+    --first-color: ;
+    --first-color-second: ;
+    --first-color-alt: ;
+    --first-color-lighter: ;
+    --title-color: ;
+    --text-color: ;
+    --text-color-light: ;
+    --input-color: ;
+    --body-color: ;
+    --container-color: ;
+
+    /* Font Family and Font Sizes */
+    --body-font: ;
+    --big-font-size: ;
+    --h1-font-size: ;
+    --h2-font-size: ;
+    --h3-font-size: ;
+    --normal-font-size: ;
+    --small-font-size: ;
+    --smaller-font-size: ;
+
+    /* Font Weight */
+    --font-medium: ;
+    --font-semi-bold: ;
+
+    /* Margin Types */
+    --mb-0-25: ;
+    --mb-0-5: ;
+    --mb-0-75: ;
+    --mb-1: ;
+    --mb-1-5: ;
+    --mb-2: ;
+    --mb-2-5: ;
+    --mb-3: ;
+
+    /* Z-index */
+    --z-tooltip: ;
+    --z-fixed: ;
+    --z-modal: ;
+}
+
+/* Font Size for Large Devices */
+@media screen and (min-width: 968px) {
+    :root {
+        --big-font-size: ;
+        --h1-font-size: ;
+        --h2-font-size: ;
+        --h3-font-size: ;
+        --normal-font-size: ;
+        --small-font-size: ;
+        --smaller-font-size: ;
+    }
+}
+
