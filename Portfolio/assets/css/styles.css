@@ -128,7 +128,9 @@ img {
     z-index: var(--z-fixed);
     background-color: var(--body-color);
 }
-
+.scroll-header {
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+}
 /* Nav */
 .nav {
     max-width: 968px;
