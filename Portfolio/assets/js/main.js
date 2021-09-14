@@ -128,3 +128,12 @@ function scrollHeader(){
 }
 window.addEventListener('scroll', scrollHeader)
 
+// Show Scroll Top
+function scrollUp(){
+  const scrollUp = document.getElementById('scroll-up');
+  // When the scroll is higher than viewport height, add the show-scroll class
+  if(this.scrollY >= 560) scrollUp.classList.add('show-scroll');
+  else scrollUp.classList('show-scroll');
+}
+window.addEventListener('scroll', scrollUp)
+
