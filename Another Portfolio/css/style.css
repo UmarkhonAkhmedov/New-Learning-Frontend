@@ -448,6 +448,32 @@ header .circle {
   top: 38%;
   left: 6%;
 }
+.grid {
+  width: 100%;
+  margin: 1.5rem 0;
+}
+.grid-item {
+  display: flex;
+  justify-content: center;
+  width: 33.3%;
+  padding: 1rem 1.2rem;
+}
+.gallary-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  height: 330px;
+  width: 100%;
+}
+.gallery-image img {
+  position: absolute;
+  height: 115%;
+  width: initial;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
 
 
 
