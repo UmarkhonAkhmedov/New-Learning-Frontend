@@ -408,6 +408,47 @@ header .circle {
   background-color: var(--light-one);
   color: var(--main-color);
 }
+.overlay.overlay-sm .shape {
+  filter: brightness(0) invert(1);
+  opacity: .15;
+  height: 40px;
+}
+.overlay.overlay-sm .shape.wave {
+  height: initial;
+  width: 70px;
+}
+.overlay.overlay-sm .shape.xshape {
+  height: 30px;
+}
+.portfolio .square {
+  top: 28%;
+  left: 20%;
+}
+.portfolio .circle {
+  top: 8%;
+  right: 35%;
+}
+.portfolio .triangle {
+  bottom: 10%;
+  right: 4%;
+}
+.portfolio .half-circle1 {
+  bottom: 13%;
+  left: 5%;
+}
+.portfolio .half-circle2 {
+  top: 35%;
+  left: 20%;
+}
+.portfolio .xshape {
+  top: 10%;
+  left: 8%;
+}
+.portfolio .square {
+  top: 38%;
+  left: 6%;
+}
+
 
 
 
